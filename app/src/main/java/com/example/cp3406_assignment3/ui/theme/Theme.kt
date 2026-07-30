@@ -1,34 +1,39 @@
 package com.example.studybuddy.ui.theme
 
-import android.os.Build
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.darkColorScheme
-import androidx.compose.material3.dynamicDarkColorScheme
-import androidx.compose.material3.dynamicLightColorScheme
 import androidx.compose.material3.lightColorScheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalContext
+import androidx.compose.ui.graphics.Color
 
-private val LightColors = lightColorScheme(primary = Indigo40, secondary = Amber40)
-private val DarkColors = darkColorScheme(primary = Indigo80, secondary = Amber80)
+private val LightColors = lightColorScheme(
+    primary = BrandPurple,
+    secondary = BrandPurpleDark,
+    background = SurfaceLight,
+    surface = Color.White,
+    surfaceVariant = Color(0xFFEFEFF5)
+)
 
+private val DarkColors = darkColorScheme(
+    primary = BrandPurpleLight,
+    secondary = BrandPurple,
+    background = SurfaceDark,
+    surface = CardDark,
+    surfaceVariant = Color(0xFF2E2839)
+)
+
+/**
+ * darkTheme now comes from the user's Settings toggle (passed in from MainActivity),
+ * not just the system default -- see MainActivity.kt.
+ */
 @Composable
 fun StudyBuddyTheme(
     darkTheme: Boolean = isSystemInDarkTheme(),
-    dynamicColor: Boolean = true,
     content: @Composable () -> Unit
 ) {
-    val context = LocalContext.current
-    val colorScheme = when {
-        dynamicColor && Build.VERSION.SDK_INT >= Build.VERSION_CODES.S ->
-            if (darkTheme) dynamicDarkColorScheme(context) else dynamicLightColorScheme(context)
-        darkTheme -> DarkColors
-        else -> LightColors
-    }
-
     MaterialTheme(
-        colorScheme = colorScheme,
+        colorScheme = if (darkTheme) DarkColors else LightColors,
         typography = StudyBuddyTypography,
         content = content
     )
