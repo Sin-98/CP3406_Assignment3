@@ -1,0 +1,21 @@
+package com.example.studybuddy.data.local
+
+import androidx.room.Database
+import androidx.room.RoomDatabase
+import com.example.studybuddy.data.local.dao.FlashcardDao
+import com.example.studybuddy.data.local.dao.QuizResultDao
+import com.example.studybuddy.data.local.dao.UserStatsDao
+import com.example.studybuddy.data.local.entity.FlashcardEntity
+import com.example.studybuddy.data.local.entity.QuizResultEntity
+import com.example.studybuddy.data.local.entity.UserStatsEntity
+
+@Database(
+    entities = [FlashcardEntity::class, QuizResultEntity::class, UserStatsEntity::class],
+    version = 1,
+    exportSchema = false
+)
+abstract class StudyBuddyDatabase : RoomDatabase() {
+    abstract fun flashcardDao(): FlashcardDao
+    abstract fun quizResultDao(): QuizResultDao
+    abstract fun userStatsDao(): UserStatsDao
+}
