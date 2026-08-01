@@ -1,10 +1,10 @@
-package com.example.studybuddy.ui.home
+package com.example.cp3406_assignment3.ui.home
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.studybuddy.data.UserPreferences
-import com.example.studybuddy.data.repository.QuizRepository
-import com.example.studybuddy.data.repository.StatsRepository
+import com.example.cp3406_assignment3.data.UserPreferences
+import com.example.cp3406_assignment3.data.repository.QuizRepository
+import com.example.cp3406_assignment3.data.repository.StatsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

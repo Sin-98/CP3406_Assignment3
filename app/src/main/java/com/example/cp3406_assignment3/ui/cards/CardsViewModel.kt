@@ -1,10 +1,10 @@
-package com.example.studybuddy.ui.cards
+package com.example.cp3406_assignment3.ui.cards
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.studybuddy.data.local.entity.FlashcardEntity
-import com.example.studybuddy.data.repository.FlashcardRepository
-import com.example.studybuddy.data.repository.StatsRepository
+import com.example.cp3406_assignment3.data.local.entity.FlashcardEntity
+import com.example.cp3406_assignment3.data.repository.FlashcardRepository
+import com.example.cp3406_assignment3.data.repository.StatsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow

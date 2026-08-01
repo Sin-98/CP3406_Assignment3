@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.theme
+package com.example.cp3406_assignment3.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.MaterialTheme

@@ -1,9 +1,9 @@
-package com.example.studybuddy.ui.settings
+package com.example.cp3406_assignment3.ui.settings
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.studybuddy.data.UserPreferences
-import com.example.studybuddy.data.UserSettings
+import com.example.cp3406_assignment3.data.UserPreferences
+import com.example.cp3406_assignment3.data.UserSettings
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.SharingStarted
 import kotlinx.coroutines.flow.StateFlow

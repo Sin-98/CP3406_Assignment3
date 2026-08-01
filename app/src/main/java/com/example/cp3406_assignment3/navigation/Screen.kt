@@ -1,4 +1,4 @@
-package com.example.studybuddy.navigation
+package com.example.cp3406_assignment3.navigation
 
 sealed class Screen(val route: String) {
     data object Home : Screen("home")

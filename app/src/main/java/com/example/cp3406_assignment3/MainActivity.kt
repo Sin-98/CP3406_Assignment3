@@ -1,4 +1,4 @@
-package com.example.studybuddy
+package com.example.cp3406_assignment3
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -12,10 +12,10 @@ import androidx.compose.runtime.getValue
 import androidx.compose.ui.Modifier
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.navigation.compose.rememberNavController
-import com.example.studybuddy.navigation.StudyBuddyBottomBar
-import com.example.studybuddy.navigation.StudyBuddyNavHost
-import com.example.studybuddy.ui.settings.SettingsViewModel
-import com.example.studybuddy.ui.theme.StudyBuddyTheme
+import com.example.cp3406_assignment3.navigation.StudyBuddyBottomBar
+import com.example.cp3406_assignment3.navigation.StudyBuddyNavHost
+import com.example.cp3406_assignment3.ui.settings.SettingsViewModel
+import com.example.cp3406_assignment3.ui.theme.StudyBuddyTheme
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint

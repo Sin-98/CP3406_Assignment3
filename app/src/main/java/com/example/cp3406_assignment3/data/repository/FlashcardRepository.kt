@@ -1,8 +1,8 @@
-package com.example.studybuddy.data.repository
+package com.example.cp3406_assignment3.data.repository
 
-import com.example.studybuddy.data.local.dao.FlashcardDao
-import com.example.studybuddy.data.remote.DictionaryApiService
-import com.example.studybuddy.data.local.entity.FlashcardEntity
+import com.example.cp3406_assignment3.data.local.dao.FlashcardDao
+import com.example.cp3406_assignment3.data.remote.DictionaryApiService
+import com.example.cp3406_assignment3.data.local.entity.FlashcardEntity
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton

@@ -1,4 +1,4 @@
-package com.example.studybuddy.data.remote
+package com.example.cp3406_assignment3.data.remote
 
 import retrofit2.http.GET
 import retrofit2.http.Path

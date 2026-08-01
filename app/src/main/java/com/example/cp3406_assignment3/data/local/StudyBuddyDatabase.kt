@@ -1,13 +1,13 @@
-package com.example.studybuddy.data.local
+package com.example.cp3406_assignment3.data.local
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.example.studybuddy.data.local.dao.FlashcardDao
-import com.example.studybuddy.data.local.dao.QuizResultDao
-import com.example.studybuddy.data.local.dao.UserStatsDao
-import com.example.studybuddy.data.local.entity.FlashcardEntity
-import com.example.studybuddy.data.local.entity.QuizResultEntity
-import com.example.studybuddy.data.local.entity.UserStatsEntity
+import com.example.cp3406_assignment3.data.local.dao.FlashcardDao
+import com.example.cp3406_assignment3.data.local.dao.QuizResultDao
+import com.example.cp3406_assignment3.data.local.dao.UserStatsDao
+import com.example.cp3406_assignment3.data.local.entity.FlashcardEntity
+import com.example.cp3406_assignment3.data.local.entity.QuizResultEntity
+import com.example.cp3406_assignment3.data.local.entity.UserStatsEntity
 
 @Database(
     entities = [FlashcardEntity::class, QuizResultEntity::class, UserStatsEntity::class],

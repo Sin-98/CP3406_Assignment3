@@ -1,9 +1,9 @@
-package com.example.studybuddy.data.local.dao
+package com.example.cp3406_assignment3.data.local.dao
 
 import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.Query
-import com.example.studybuddy.data.local.entity.QuizResultEntity
+import com.example.cp3406_assignment3.data.local.entity.QuizResultEntity
 import kotlinx.coroutines.flow.Flow
 
 @Dao

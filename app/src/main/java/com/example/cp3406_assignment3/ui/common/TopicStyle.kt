@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.common
+package com.example.cp3406_assignment3.ui.common
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Book
@@ -8,11 +8,11 @@ import androidx.compose.material.icons.filled.Storage
 import androidx.compose.material.icons.filled.Wifi
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.example.studybuddy.ui.theme.TopicCyberSecurity
-import com.example.studybuddy.ui.theme.TopicJava
-import com.example.studybuddy.ui.theme.TopicNetworking
-import com.example.studybuddy.ui.theme.TopicPython
-import com.example.studybuddy.ui.theme.TopicSql
+import com.example.cp3406_assignment3.ui.theme.TopicCyberSecurity
+import com.example.cp3406_assignment3.ui.theme.TopicJava
+import com.example.cp3406_assignment3.ui.theme.TopicNetworking
+import com.example.cp3406_assignment3.ui.theme.TopicPython
+import com.example.cp3406_assignment3.ui.theme.TopicSql
 
 val ALL_TOPICS = listOf("Java", "Python", "SQL", "Networking", "Cyber Security")
 

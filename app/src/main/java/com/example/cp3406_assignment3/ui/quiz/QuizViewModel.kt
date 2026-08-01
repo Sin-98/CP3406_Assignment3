@@ -1,12 +1,12 @@
-package com.example.studybuddy.ui.quiz
+package com.example.cp3406_assignment3.ui.quiz
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.studybuddy.data.UserPreferences
-import com.example.studybuddy.data.remote.TriviaQuestionDto
-import com.example.studybuddy.data.repository.QuizRepository
-import com.example.studybuddy.data.repository.StatsRepository
+import com.example.cp3406_assignment3.data.UserPreferences
+import com.example.cp3406_assignment3.data.remote.TriviaQuestionDto
+import com.example.cp3406_assignment3.data.repository.QuizRepository
+import com.example.cp3406_assignment3.data.repository.StatsRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
@@ -72,6 +72,7 @@ class QuizViewModel @Inject constructor(
                     quizError = if (questions.isEmpty()) "No questions returned. Try again." else null
                 )
             } catch (e: Exception) {
+                android.util.Log.e("QuizViewModel", "Failed to load quiz questions", e)
                 _uiState.value = _uiState.value.copy(
                     isLoading = false,
                     quizError = "Couldn't load quiz questions. Check your connection and try again."

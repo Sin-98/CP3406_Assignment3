@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.quiz
+package com.example.cp3406_assignment3.ui.quiz
 
 import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.background
@@ -42,8 +42,8 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.studybuddy.ui.theme.ErrorRed
-import com.example.studybuddy.ui.theme.SuccessGreen
+import com.example.cp3406_assignment3.ui.theme.ErrorRed
+import com.example.cp3406_assignment3.ui.theme.SuccessGreen
 
 @Composable
 fun QuizPlayScreen(

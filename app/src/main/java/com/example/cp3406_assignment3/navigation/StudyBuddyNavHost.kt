@@ -1,4 +1,4 @@
-package com.example.studybuddy.navigation
+package com.example.cp3406_assignment3.navigation
 
 import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
@@ -6,12 +6,13 @@ import androidx.navigation.NavType
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.navArgument
-import com.example.studybuddy.ui.cards.CardsScreen
-import com.example.studybuddy.ui.home.HomeScreen
-import com.example.studybuddy.ui.quiz.QuizPlayScreen
-import com.example.studybuddy.ui.quiz.QuizTopicScreen
-import com.example.studybuddy.ui.settings.SettingsScreen
-import com.example.studybuddy.ui.statistics.StatisticsScreen
+import androidx.navigation.NavGraph.Companion.findStartDestination
+import com.example.cp3406_assignment3.ui.cards.CardsScreen
+import com.example.cp3406_assignment3.ui.home.HomeScreen
+import com.example.cp3406_assignment3.ui.quiz.QuizPlayScreen
+import com.example.cp3406_assignment3.ui.quiz.QuizTopicScreen
+import com.example.cp3406_assignment3.ui.settings.SettingsScreen
+import com.example.cp3406_assignment3.ui.statistics.StatisticsScreen
 
 @Composable
 fun StudyBuddyNavHost(navController: NavHostController) {
@@ -19,8 +20,20 @@ fun StudyBuddyNavHost(navController: NavHostController) {
 
         composable(Screen.Home.route) {
             HomeScreen(
-                onStartQuiz = { navController.navigate(Screen.Quiz.route) },
-                onStudyFlashcards = { navController.navigate(Screen.Cards.route) },
+                onStartQuiz = {
+                    navController.navigate(Screen.Quiz.route) {
+                        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                },
+                onStudyFlashcards = {
+                    navController.navigate(Screen.Cards.route) {
+                        popUpTo(navController.graph.findStartDestination().id) { saveState = true }
+                        launchSingleTop = true
+                        restoreState = true
+                    }
+                },
                 onOpenTopic = { topic -> navController.navigate(Screen.QuizPlay.createRoute(topic)) }
             )
         }

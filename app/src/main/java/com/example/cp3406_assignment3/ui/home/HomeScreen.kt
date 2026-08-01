@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.home
+package com.example.cp3406_assignment3.ui.home
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
@@ -42,11 +42,11 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.studybuddy.ui.common.ALL_TOPICS
-import com.example.studybuddy.ui.common.topicColor
-import com.example.studybuddy.ui.common.topicIcon
-import com.example.studybuddy.ui.theme.BrandPurple
-import com.example.studybuddy.ui.theme.BrandPurpleDark
+import com.example.cp3406_assignment3.ui.common.ALL_TOPICS
+import com.example.cp3406_assignment3.ui.common.topicColor
+import com.example.cp3406_assignment3.ui.common.topicIcon
+import com.example.cp3406_assignment3.ui.theme.BrandPurple
+import com.example.cp3406_assignment3.ui.theme.BrandPurpleDark
 
 @Composable
 fun HomeScreen(

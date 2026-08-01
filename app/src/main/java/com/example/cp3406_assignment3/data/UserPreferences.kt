@@ -1,4 +1,4 @@
-package com.example.studybuddy.data
+package com.example.cp3406_assignment3.data
 
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey

@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.cards
+package com.example.cp3406_assignment3.ui.cards
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.clickable
@@ -42,8 +42,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.studybuddy.ui.common.ALL_TOPICS
-import com.example.studybuddy.ui.common.topicColor
+import com.example.cp3406_assignment3.ui.common.ALL_TOPICS
+import com.example.cp3406_assignment3.ui.common.topicColor
 
 @Composable
 fun CardsScreen(viewModel: CardsViewModel = hiltViewModel()) {

@@ -1,4 +1,4 @@
-package com.example.studybuddy.data.local.entity
+package com.example.cp3406_assignment3.data.local.entity
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey

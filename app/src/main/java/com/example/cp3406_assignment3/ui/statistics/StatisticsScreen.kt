@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.statistics
+package com.example.cp3406_assignment3.ui.statistics
 
 import androidx.compose.foundation.Canvas
 import androidx.compose.foundation.background
@@ -27,8 +27,8 @@ import androidx.compose.ui.graphics.drawscope.Stroke
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.studybuddy.ui.common.topicColor
-import com.example.studybuddy.ui.theme.BrandPurple
+import com.example.cp3406_assignment3.ui.common.topicColor
+import com.example.cp3406_assignment3.ui.theme.BrandPurple
 
 @Composable
 fun StatisticsScreen(viewModel: StatisticsViewModel = hiltViewModel()) {

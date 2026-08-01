@@ -1,6 +1,6 @@
-package com.example.studybuddy.data.local
+package com.example.cp3406_assignment3.data.local
 
-import com.example.studybuddy.data.local.entity.FlashcardEntity
+import com.example.cp3406_assignment3.data.local.entity.FlashcardEntity
 
 /**
  * Starter content so the Flashcard tab is never empty on first launch.

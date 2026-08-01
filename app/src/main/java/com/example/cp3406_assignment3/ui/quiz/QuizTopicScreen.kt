@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.quiz
+package com.example.cp3406_assignment3.ui.quiz
 
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Arrangement
@@ -36,10 +36,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.studybuddy.ui.common.ALL_TOPICS
-import com.example.studybuddy.ui.common.topicColor
-import com.example.studybuddy.ui.common.topicIcon
-import com.example.studybuddy.ui.settings.SettingsViewModel
+import com.example.cp3406_assignment3.ui.common.ALL_TOPICS
+import com.example.cp3406_assignment3.ui.common.topicColor
+import com.example.cp3406_assignment3.ui.common.topicIcon
+import com.example.cp3406_assignment3.ui.settings.SettingsViewModel
 
 @Composable
 fun QuizTopicScreen(

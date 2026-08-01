@@ -1,7 +1,7 @@
-package com.example.studybuddy.data.repository
+package com.example.cp3406_assignment3.data.repository
 
-import com.example.studybuddy.data.local.dao.UserStatsDao
-import com.example.studybuddy.data.local.entity.UserStatsEntity
+import com.example.cp3406_assignment3.data.local.dao.UserStatsDao
+import com.example.cp3406_assignment3.data.local.entity.UserStatsEntity
 import kotlinx.coroutines.flow.Flow
 import java.util.concurrent.TimeUnit
 import javax.inject.Inject

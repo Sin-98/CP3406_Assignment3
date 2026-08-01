@@ -1,4 +1,4 @@
-package com.example.studybuddy.navigation
+package com.example.cp3406_assignment3.navigation
 
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.BarChart

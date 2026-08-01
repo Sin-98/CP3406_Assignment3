@@ -1,4 +1,4 @@
-package com.example.studybuddy.ui.settings
+package com.example.cp3406_assignment3.ui.settings
 
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
@@ -29,7 +29,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
-import com.example.studybuddy.ui.theme.BrandPurple
+import com.example.cp3406_assignment3.ui.theme.BrandPurple
 
 @Composable
 fun SettingsScreen(viewModel: SettingsViewModel = hiltViewModel()) {

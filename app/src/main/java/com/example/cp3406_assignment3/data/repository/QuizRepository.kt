@@ -1,9 +1,9 @@
-package com.example.studybuddy.data.repository
+package com.example.cp3406_assignment3.data.repository
 
-import com.example.studybuddy.data.local.dao.QuizResultDao
-import com.example.studybuddy.data.local.entity.QuizResultEntity
-import com.example.studybuddy.data.remote.TriviaApiService
-import com.example.studybuddy.data.remote.TriviaQuestionDto
+import com.example.cp3406_assignment3.data.local.dao.QuizResultDao
+import com.example.cp3406_assignment3.data.local.entity.QuizResultEntity
+import com.example.cp3406_assignment3.data.remote.TriviaApiService
+import com.example.cp3406_assignment3.data.remote.TriviaQuestionDto
 import kotlinx.coroutines.flow.Flow
 import javax.inject.Inject
 import javax.inject.Singleton

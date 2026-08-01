@@ -1,16 +1,18 @@
-package com.example.studybuddy.di
+package com.example.cp3406_assignment3.di
 
 import android.content.Context
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.sqlite.db.SupportSQLiteDatabase
-import com.example.studybuddy.data.local.SampleData
-import com.example.studybuddy.data.local.StudyBuddyDatabase
-import com.example.studybuddy.data.local.dao.FlashcardDao
-import com.example.studybuddy.data.local.dao.QuizResultDao
-import com.example.studybuddy.data.local.dao.UserStatsDao
-import com.example.studybuddy.data.remote.DictionaryApiService
-import com.example.studybuddy.data.remote.TriviaApiService
+import com.example.cp3406_assignment3.data.local.SampleData
+import com.example.cp3406_assignment3.data.local.StudyBuddyDatabase
+import com.example.cp3406_assignment3.data.local.dao.FlashcardDao
+import com.example.cp3406_assignment3.data.local.dao.QuizResultDao
+import com.example.cp3406_assignment3.data.local.dao.UserStatsDao
+import com.example.cp3406_assignment3.data.remote.DictionaryApiService
+import com.example.cp3406_assignment3.data.remote.TriviaApiService
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -25,8 +27,6 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 import javax.inject.Provider
 import javax.inject.Qualifier
 import javax.inject.Singleton
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 
 @Qualifier
 @Retention(AnnotationRetention.BINARY)
@@ -66,6 +66,12 @@ object AppModule {
 
     @Provides
     @Singleton
+    fun provideMoshi(): Moshi = Moshi.Builder()
+        .add(KotlinJsonAdapterFactory()) // required for Moshi to parse Kotlin data classes correctly
+        .build()
+
+    @Provides
+    @Singleton
     @TriviaRetrofit
     fun provideTriviaRetrofit(moshi: Moshi): Retrofit = Retrofit.Builder()
         .baseUrl("https://opentdb.com/")
@@ -93,11 +99,5 @@ object AppModule {
     @Provides
     @Singleton
     fun provideUserPreferences(@ApplicationContext ctx: Context) =
-        com.example.studybuddy.data.UserPreferences(ctx)
-
-    @Provides
-    @Singleton
-    fun provideMoshi(): Moshi = Moshi.Builder()
-        .add(KotlinJsonAdapterFactory())
-        .build()
+        com.example.cp3406_assignment3.data.UserPreferences(ctx)
 }

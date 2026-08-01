@@ -6,11 +6,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.studybuddy"
+    namespace = "com.example.cp3406_assignment3"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.studybuddy"
+        applicationId = "com.example.cp3406_assignment3"
         minSdk = 26
         targetSdk = 34
         versionCode = 1
